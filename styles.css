@@ -1,0 +1,126 @@
+*::after {
+    box-sizing: inherit;
+}
+*::after {
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    margin: 0;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+/* Globales  */
+h1 {
+    padding: 1rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+.encabezado {
+    position: absolute;
+}
+.encabezado::after {
+    content: '';
+    position: relative;
+    display: block;
+    background-color: red;
+    height: 40px;
+    width: 125%;
+    left: -18px;
+    bottom: 40px;
+    z-index: -2;
+}
+.contenedor {
+    max-width: 1200px;
+    background-color: #000000;
+    padding: 1em;
+    margin: 0 auto;
+    min-height: 80vh;
+}
+.gameboard {
+    height: 100vh;
+    width: 100vh;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    max-height: 60vh;
+    max-width: 60vh;
+}
+
+.color {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: left;
+}
+
+.celeste {
+    background: #22a6b3;
+}
+
+.celeste.light {
+    background: #7ed6df;
+}
+
+.violeta {
+    background: #be2edd;
+}
+
+.violeta.light {
+    background: #e056fd;
+}
+
+.naranja {
+    background: #f0932b;
+}
+
+.naranja.light {
+    background: #ffbe76;
+}
+
+.verde {
+    background: #6ab04c;
+}
+
+.verde.light {
+    background: #badc58;
+}
+
+.btn-start {
+    width: 400px;
+    height: 100px;
+    background: #ecf0f1;
+    color: #2c3e50;
+    border: none;
+    border-bottom: 4px solid #c4c6c7;
+    font-size: 2.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 200px);
+    transition: all .5s ease-in-out;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btn-start:hover {
+    background: #2c3e50;
+    color: #ecf0f1;
+    border-bottom: 4px solid #1f3346;
+}
+
+.hide {
+    display: none;
+}
